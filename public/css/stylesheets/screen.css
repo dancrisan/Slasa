@@ -1,0 +1,676 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  font-family: "Canter";
+  src: url("../../files/font/Canter_bold.otf");
+}
+@font-face {
+  font-family: "Caviar_Bold";
+  src: url("../../files/font/CaviarDreams_Bold.ttf");
+}
+@font-face {
+  font-family: "Caviar";
+  src: url("../../files/font/CaviarDreams.ttf");
+}
+/*Font sizes*/
+/* line 26, ../sass/screen.scss */
+body {
+  z-index: -2;
+}
+
+/* line 30, ../sass/screen.scss */
+button:focus {
+  outline: none;
+}
+
+/* line 35, ../sass/screen.scss */
+.container h1 {
+  font-size: 8vw;
+}
+/* line 38, ../sass/screen.scss */
+.container h2 {
+  font-size: 6vw;
+}
+/* line 43, ../sass/screen.scss */
+.container h5 {
+  font-size: 2.5vw;
+}
+/* line 46, ../sass/screen.scss */
+.container h6 {
+  font-size: 2vw;
+}
+/* line 49, ../sass/screen.scss */
+.container p {
+  font-size: 16pt;
+}
+/* line 52, ../sass/screen.scss */
+.container ul {
+  font-size: 14pt;
+  margin: 30px 10px 30px 10px;
+}
+
+/* line 69, ../sass/screen.scss */
+::selection {
+  background: #e7e2e2;
+  /* WebKit/Blink Browsers */
+}
+
+/* line 72, ../sass/screen.scss */
+::-moz-selection {
+  background: #e7e2e2;
+  /* Gecko Browsers */
+}
+
+/* line 79, ../sass/screen.scss */
+.container h1, .container h2, .container h3 {
+  font-family: "Canter";
+}
+/* line 82, ../sass/screen.scss */
+.container h4, .container button {
+  font-family: "Caviar";
+}
+/* line 85, ../sass/screen.scss */
+.container .desc {
+  font-family: "Caviar";
+  width: 75%;
+  float: right;
+}
+/* line 90, ../sass/screen.scss */
+.container .act_des, .container .members li {
+  font-family: "Caviar";
+}
+/* line 93, ../sass/screen.scss */
+.container .img_des {
+  font-size: 12pt;
+}
+/* line 96, ../sass/screen.scss */
+.container .img_des p {
+  text-align: center;
+}
+
+/* line 106, ../sass/screen.scss */
+nav {
+  background-color: #e77723;
+  position: absolute;
+}
+/* line 111, ../sass/screen.scss */
+nav .navbar-toggle .icon-bar {
+  background-color: white;
+}
+/* line 115, ../sass/screen.scss */
+nav a {
+  color: white;
+  text-align: center;
+  font-family: "Caviar";
+}
+/* line 121, ../sass/screen.scss */
+nav .navbar-brand img {
+  height: 30px;
+  width: auto;
+}
+
+/* line 127, ../sass/screen.scss */
+#logo_frame {
+  width: 400px;
+  margin: auto;
+  z-index: 0;
+}
+
+/* line 133, ../sass/screen.scss */
+.logo {
+  text-align: center;
+  display: block;
+  position: fixed;
+  z-index: 0;
+}
+
+/* line 143, ../sass/screen.scss */
+.about {
+  width: 100%;
+  background-color: white;
+  border: 1px solid white;
+}
+/* line 150, ../sass/screen.scss */
+.about h1 {
+  color: #e77723;
+}
+/* line 153, ../sass/screen.scss */
+.about p {
+  margin-bottom: 100px;
+}
+
+/* line 160, ../sass/screen.scss */
+.activities {
+  opacity: 0.95;
+  width: 100%;
+  background-color: #e77723;
+  border: 1px solid #e77723;
+}
+/* line 166, ../sass/screen.scss */
+.activities h1, .activities .desc {
+  color: #3d3e42;
+}
+/* line 170, ../sass/screen.scss */
+.activities .container {
+  text-align: center;
+}
+/* line 173, ../sass/screen.scss */
+.activities .container h1, .activities .container .desc {
+  text-align: left;
+}
+/* line 177, ../sass/screen.scss */
+.activities .container .row .mobile_help {
+  font-family: "Caviar";
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+/* line 186, ../sass/screen.scss */
+.activities #act {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+/* line 191, ../sass/screen.scss */
+.activities .act {
+  background-color: #e7e2e2;
+  color: #3d3e42;
+  font-size: 8pt;
+  line-height: 10px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  padding: 0px;
+  margin: 0px 15px 10px 15px;
+  border: 5px solid #3d3e42;
+  vertical-align: middle;
+  overflow: hidden;
+  border-radius: 75px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+/* line 212, ../sass/screen.scss */
+.activities .act * {
+  vertical-align: middle;
+  text-align: center;
+}
+/* line 217, ../sass/screen.scss */
+.activities #party, .activities #hat, .activities #speak, .activities #help {
+  height: 50px;
+  width: auto;
+  margin: 0px;
+}
+/* line 224, ../sass/screen.scss */
+.activities .act_overview {
+  height: 150px;
+}
+/* line 227, ../sass/screen.scss */
+.activities .act_overview p {
+  font-size: 12pt;
+}
+/* line 232, ../sass/screen.scss */
+.activities .act_opt {
+  background-color: #3d3e42;
+  border: 1px solid #3d3e42;
+  width: 100%;
+  height: 150px;
+  margin: 0px;
+  padding: 0px;
+  margin-bottom: 0px;
+  color: #e7e2e2;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+/* line 248, ../sass/screen.scss */
+.activities .act_opt p {
+  border: 2px solid #e7e2e2;
+}
+/* line 251, ../sass/screen.scss */
+.activities .act_opt #babes, .activities .act_opt #parties {
+  margin-top: 25px;
+}
+/* line 254, ../sass/screen.scss */
+.activities .act_opt #cocktail, .activities .act_opt #bike {
+  margin-top: 40px;
+}
+/* line 257, ../sass/screen.scss */
+.activities .act_opt #summit {
+  margin-top: 50px;
+}
+/* line 261, ../sass/screen.scss */
+.activities .act_opt p:hover {
+  background-color: #e7e2e2;
+  color: #3d3e42;
+}
+/* line 268, ../sass/screen.scss */
+.activities .act_des {
+  margin: auto;
+  overflow: hidden;
+}
+/* line 272, ../sass/screen.scss */
+.activities .act_des #hover_show {
+  margin: auto;
+}
+/* line 277, ../sass/screen.scss */
+.activities .act_des .act_des_hidden {
+  position: absolute;
+  text-align: justify;
+  margin: auto;
+  margin-bottom: 0px;
+  opacity: 0;
+}
+/* line 279, ../sass/screen.scss */
+.activities .act_des .act_des_hidden h4 {
+  text-align: center;
+}
+/* line 283, ../sass/screen.scss */
+.activities .act_des .act_des_hidden a {
+  color: #e7e2e2;
+}
+/* line 288, ../sass/screen.scss */
+.activities .act_des .act_des_hidden a:hover {
+  text-decoration: none;
+  color: #3d3e42;
+}
+/* line 299, ../sass/screen.scss */
+.activities .act_des .act_des_hidden .act-img-owl .item {
+  margin: 3px;
+}
+/* line 302, ../sass/screen.scss */
+.activities .act_des .act_des_hidden .act-img-owl .item img {
+  display: block;
+  width: 100%;
+  height: 260px;
+}
+/* line 310, ../sass/screen.scss */
+.activities .act_des .act_des_hidden, .activities .act_des #hover_show {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+/* line 334, ../sass/screen.scss */
+.team {
+  width: 100%;
+  background-color: #e7e2e2;
+  border: 1px solid #e7e2e2;
+}
+/* line 339, ../sass/screen.scss */
+.team h1 {
+  color: #e77723;
+}
+/* line 342, ../sass/screen.scss */
+.team .img_frame {
+  width: 85%;
+  margin: auto;
+  margin-top: 120px;
+  margin-bottom: 70px;
+  text-align: center;
+}
+/* line 350, ../sass/screen.scss */
+.team .img_frame .img {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  overflow: hidden;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+/* line 366, ../sass/screen.scss */
+.team .img_frame #i_1 {
+  background-image: url("../../files/team/Andrea.jpg");
+}
+/* line 369, ../sass/screen.scss */
+.team .img_frame #i_2 {
+  background-image: url("../../files/team/Armando.jpg");
+}
+/* line 372, ../sass/screen.scss */
+.team .img_frame #i_3 {
+  background-image: url("../../files/team/Isa.jpg");
+}
+/* line 375, ../sass/screen.scss */
+.team .img_frame #i_4 {
+  background-image: url("../../files/team/Constance.jpg");
+}
+/* line 378, ../sass/screen.scss */
+.team .img_frame #i_5 {
+  background-image: url("../../files/team/Cristina.jpg");
+}
+/* line 381, ../sass/screen.scss */
+.team .img_frame #i_6 {
+  background-image: url("../../files/team/Jean-Yves.jpg");
+}
+/* line 384, ../sass/screen.scss */
+.team .img_frame #i_7 {
+  background-image: url("../../files/team/Ines.jpg");
+}
+/* line 387, ../sass/screen.scss */
+.team .img_frame #i_8 {
+  background-image: url("../../files/team/Vincent.jpg");
+}
+/* line 390, ../sass/screen.scss */
+.team .img_frame #i_9 {
+  background-image: url("../../files/team/Alexia.jpg");
+}
+/* line 393, ../sass/screen.scss */
+.team .img_frame #i_10 {
+  background-image: url("../../files/team/Ivan.jpg");
+}
+/* line 396, ../sass/screen.scss */
+.team .img_frame #i_11 {
+  background-image: url("../../files/team/Roxy.jpg");
+}
+/* line 400, ../sass/screen.scss */
+.team .img_frame .img_des {
+  font-family: "Caviar";
+  width: 200px;
+  opacity: 1;
+  height: 200px;
+  background-color: #3d3e42;
+  color: #e77723;
+  display: inline-block;
+  text-align: left;
+  margin-top: 170px;
+  transition: 0.8s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+
+/* line 419, ../sass/screen.scss */
+.member {
+  width: 100%;
+  background-color: white;
+  border: 1px solid white;
+}
+/* line 425, ../sass/screen.scss */
+.member h1 {
+  color: #e77723;
+}
+/* line 431, ../sass/screen.scss */
+.member .row #card {
+  margin: auto;
+  background-image: url("../../files/membership_card.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+@media only screen and (min-width: 768px) {
+  /* line 431, ../sass/screen.scss */
+  .member .row #card {
+    width: 450px;
+    height: 290px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 431, ../sass/screen.scss */
+  .member .row #card {
+    width: 300px;
+    height: 190px;
+  }
+}
+/* line 451, ../sass/screen.scss */
+.member .row .member_info {
+  font-family: "Caviar";
+}
+/* line 453, ../sass/screen.scss */
+.member .row .member_info h4, .member .row .member_info p {
+  color: #e77723;
+}
+/* line 459, ../sass/screen.scss */
+.member #sponsors {
+  width: 92%;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  text-align: center;
+}
+/* line 466, ../sass/screen.scss */
+.member .sponsors {
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 10px 10px 5px 10px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  transition: all .2s ease-in-out;
+  -webkit-transition: all .2s ease-in-out;
+  -moz-transition: all .2s ease-in-out;
+  -ms-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+}
+@media only screen and (min-width: 768px) {
+  /* line 466, ../sass/screen.scss */
+  .member .sponsors {
+    width: 10vw;
+    height: 6vw;
+  }
+}
+@media only screen and (max-width: 768px) {
+  /* line 466, ../sass/screen.scss */
+  .member .sponsors {
+    width: 20vw;
+    height: 12vw;
+  }
+}
+/* line 496, ../sass/screen.scss */
+.member #s_1 {
+  background-image: url("../../files/sponsors/carlos y pepes.gif");
+}
+/* line 499, ../sass/screen.scss */
+.member #s_2 {
+  background-image: url("../../files/sponsors/arepera.png");
+}
+/* line 502, ../sass/screen.scss */
+.member #s_3 {
+  background-image: url("../../files/sponsors/burrito shop.png");
+}
+/* line 505, ../sass/screen.scss */
+.member #s_4 {
+  background-image: url("../../files/sponsors/el rey del taco.png");
+}
+/* line 508, ../sass/screen.scss */
+.member #s_5 {
+  background-image: url("../../files/sponsors/la movida.jpg");
+}
+/* line 511, ../sass/screen.scss */
+.member #s_6 {
+  background-image: url("../../files/sponsors/Guanabara Bistro & Café.png");
+}
+/* line 519, ../sass/screen.scss */
+.member .sponsors:hover {
+  transform: scale(1.2);
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+}
+
+/* line 529, ../sass/screen.scss */
+.food {
+  width: 100%;
+  background-color: #e7e2e2;
+  border: 1px solid #e7e2e2;
+  opacity: 0.95;
+}
+/* line 535, ../sass/screen.scss */
+.food h1 {
+  color: #e77723;
+}
+/* line 538, ../sass/screen.scss */
+.food .row {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+/* line 542, ../sass/screen.scss */
+.food .row #food_info {
+  margin: auto;
+  background-color: white;
+  overflow: scroll;
+  border: 20px solid #3d3e42;
+}
+/* line 548, ../sass/screen.scss */
+.food .row #food_info .food_info {
+  display: block;
+  padding: 10px;
+  background-color: #e7e2e2;
+  color: #e77723;
+  text-align: center;
+  margin-bottom: 10px;
+}
+/* line 556, ../sass/screen.scss */
+.food .row #food_info .food_info p, .food .row #food_info .food_info ul {
+  font-family: "Caviar";
+  text-align: left;
+}
+/* line 560, ../sass/screen.scss */
+.food .row #food_info .food_info a {
+  text-align: center;
+  color: #3d3e42;
+  font-family: "Caviar";
+}
+/* line 565, ../sass/screen.scss */
+.food .row #food_info .food_info a:hover {
+  color: white;
+  text-decoration: none;
+}
+/* line 572, ../sass/screen.scss */
+.food .row iframe {
+  margin: auto;
+}
+
+/* line 579, ../sass/screen.scss */
+.contact {
+  text-align: center;
+  font-family: "Caviar";
+}
+/* line 585, ../sass/screen.scss */
+.contact h2 {
+  font-family: "Canter";
+  font-size: 5vw;
+}
+
+/* line 590, ../sass/screen.scss */
+#email {
+  width: 65%;
+  background-color: #e77723;
+  border: 1px solid #e77723;
+}
+/* line 595, ../sass/screen.scss */
+#email a {
+  color: #3d3e42;
+  text-decoration: none;
+  font-size: 20pt;
+}
+
+/* line 603, ../sass/screen.scss */
+#meet {
+  width: 35%;
+  float: right;
+  border: 1px solid #3d3e42;
+  background-color: #3d3e42;
+  color: #e77723;
+  text-align: center;
+}
+/* line 611, ../sass/screen.scss */
+#meet #address {
+  margin: auto;
+}
+/* line 614, ../sass/screen.scss */
+#meet p {
+  text-align: left;
+}
+/* line 617, ../sass/screen.scss */
+#meet img {
+  height: 100px;
+  width: auto;
+  display: block;
+  margin: auto;
+}
